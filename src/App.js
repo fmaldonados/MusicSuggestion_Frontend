@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
 import {ReactComponent as Logo} from './img/svg/logo.svg';
-import background from './img/background1.jpg'
+import { BrowserRouter, Route, Switch, withRouter, NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+
+//components
+import Landing from './components/landing'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav className="navbar navbar-light" style={{backgroundColor:'#0B0C10'}}>
+        <nav className="navbar navbar-light" style={{backgroundColor:"#1F2833"}}>
+        
           <a className="navbar-brand" style={{color:"#FFFFFF"}}>
-          <Logo style={{fill:"#FFFFFF"}}></Logo>
-          Navbar</a>
+          <Logo style={{fill:"#FFFFFF", height:'50px', width: '50px'}}></Logo>
+          MUSIC4YOU</a>
           <form className="form-inline">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-            <button className="btn my-2 my-sm-0" style={{backgroundColor:"#45a29e", color:"#FFFFFF"}} type="submit">Login</button>
+            <button className="btn my-2 my-sm-0" style={{backgroundColor:"#45a29e", color:"#FFFFFF"}}>Login</button>
           </form>
         </nav>
-        <div className="landingBackground">
-          <img src={background}></img>
-        </div>
+
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={Landing}></Route>
+          </Switch>
+        </BrowserRouter>
       </div>
     );
   }
