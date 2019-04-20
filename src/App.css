@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .bg {
   display: block;
@@ -19,9 +19,11 @@
 
 .backgroundTitle{
   position: fixed;
-  top: 250px;
-  left: 50px;
+  top: 130px;
   color: #ffffff;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  font-weight: bold;
+  font-size: 110px;
+  padding: 100px;
 }

@@ -12,7 +12,7 @@ class Landing extends React.Component {
 
                 </div>
 
-                <h1 className="display-1 backgroundTitle">THE PERFECT PLACE FOR MUSIC HEAVEN</h1>
+                <h1 className="backgroundTitle">THE PERFECT PLACE FOR MUSIC HEAVEN</h1>
 
             </div>
         )

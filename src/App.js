@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {ReactComponent as Logo} from './img/svg/logo.svg';
+import {ReactComponent as SpotifyLogo} from './img/svg/spotify.svg';
 import { BrowserRouter, Route, Switch, withRouter, NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -17,14 +18,15 @@ class App extends Component {
           <Logo style={{fill:"#66F6F1", height:'50px', width: '50px'}}></Logo>
           MUSIC4YOU</a>
           <form className="form-inline">
-            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-            <button className="btn my-2 my-sm-0" style={{backgroundColor:"#45a29e", color:"#FFFFFF"}}>Login</button>
+            {/* <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input> */}
+            <button className="btn my-2 my-sm-0" style={{backgroundColor:"#1DB954", color:"#FFFFFF"}}><SpotifyLogo style={{marginRight:'5px'}}></SpotifyLogo> LOGIN</button>
           </form>
         </nav>
 
         <BrowserRouter>
           <Switch>
             <Route path="/" component={Landing}></Route>
+            {/* <Route path="/" component={Ops404}></Route> */}
           </Switch>
         </BrowserRouter>
       </div>
