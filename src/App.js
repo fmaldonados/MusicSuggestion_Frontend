@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {ReactComponent as Logo} from './img/svg/logo.svg';
 import {ReactComponent as SpotifyLogo} from './img/svg/spotify.svg';
-import { BrowserRouter, Route, Switch, withRouter, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 //components
 import Landing from './components/landing'
+import Oops404 from './components/Oops404'
 
 class App extends Component {
   render() {
@@ -25,8 +26,8 @@ class App extends Component {
 
         <BrowserRouter>
           <Switch>
-            <Route path="/" component={Landing}></Route>
-            {/* <Route path="/" component={Ops404}></Route> */}
+            <Route path="/" component={Landing} exact={true}></Route>
+            <Route path="*" component={Oops404}></Route>
           </Switch>
         </BrowserRouter>
       </div>

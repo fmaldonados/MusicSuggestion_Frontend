@@ -27,3 +27,11 @@
   font-size: 110px;
   padding: 100px;
 }
+
+.textCentered{
+  position: fixed;
+  top: 130px;
+  margin-left: 20%;
+  text-align: center;
+  padding: 100px;
+}
