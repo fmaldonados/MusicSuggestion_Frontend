@@ -7,8 +7,13 @@ class Landing extends React.Component {
         return (
             <div className='Landing'>
                 <div className="landingBackground" className='bg'>
-                    <div className="transparentOVerlay"> </div>
+                    <div className="transparentOVerlay">
+                    </div>
+
                 </div>
+
+                <h1 className="display-1 backgroundTitle">THE PERFECT PLACE FOR MUSIC HEAVEN</h1>
+
             </div>
         )
     }

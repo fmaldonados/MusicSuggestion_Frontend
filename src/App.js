@@ -14,7 +14,7 @@ class App extends Component {
         <nav className="navbar navbar-light" style={{backgroundColor:"#1F2833"}}>
         
           <a className="navbar-brand" style={{color:"#FFFFFF"}}>
-          <Logo style={{fill:"#FFFFFF", height:'50px', width: '50px'}}></Logo>
+          <Logo style={{fill:"#66F6F1", height:'50px', width: '50px'}}></Logo>
           MUSIC4YOU</a>
           <form className="form-inline">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
