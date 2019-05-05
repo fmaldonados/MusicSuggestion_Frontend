@@ -1,10 +1,12 @@
 import React from 'react';
+import {Redirect} from 'react-router-dom';
 
 class Landing extends React.Component {
     render() {
         return (
-            <div className='Landing'>
-                <div className="landingBackground" className='bg'>
+            this.props.isAuth?<Redirect to='/home'></Redirect>:
+            (<div className='Landing'>
+                <div className="landingBackground bg">
                     <div className="transparentOVerlay">
                     </div>
 
@@ -12,7 +14,7 @@ class Landing extends React.Component {
 
                 <h1 className="backgroundTitle">THE PERFECT PLACE FOR MUSIC HEAVEN</h1>
 
-            </div>
+            </div>)
         )
     }
 }
